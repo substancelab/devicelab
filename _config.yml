@@ -9,8 +9,6 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server
 # process.
 
-source: source
-
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
@@ -28,7 +26,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 markdown: kramdown
 sass:
-  sass_dir: source/assets/styles/_includes
+  sass_dir: assets/styles/_includes
 exclude:
   - Gemfile
   - Gemfile.lock
