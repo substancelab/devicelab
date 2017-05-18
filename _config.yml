@@ -27,6 +27,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
+sass:
+  sass_dir: source/assets/styles/_includes
 exclude:
   - Gemfile
   - Gemfile.lock
