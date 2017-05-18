@@ -2,7 +2,18 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 ---
 
-@import url(https://fonts.googleapis.com/css?family=Lato)
+@import url(https://fonts.googleapis.com/css?family=Open+Sans)
+
+$link-color: #3498db
+
+a
+  &:link
+    color: $link-color
+  &:visited
+    color: darken($link-color, 15%)
+  &:hover,
+  &:active
+    color: lighten($link-color, 25%)
 
 article
   margin:
@@ -11,23 +22,32 @@ article
   width: 66%
 
 body
-  background: #eeeef2
+  background: #f4f4f4
   color: #333333
-  font-family: 'Lato', arial, sans-serif
+  font-family: 'Open Sans', arial, sans-serif
   line-height: 1.7
+  margin: 0
+  padding: 0
 
 header
+  background: #f1c40f
   font-size: 1.6em
+  padding: 3rem
   text-align: center
 
+  h1
+    margin-top: 0
+
+  p
+    margin-bottom: 0
+
 section
-  border-top: 2px solid #dddded
+  border-bottom: 2px solid #dddded
   padding:
-    bottom: 2rem
-    top: 2rem
+    bottom: 4rem
   margin:
     bottom: 2rem
-    top: 2rem
+    top: 4rem
 
 // Headlines
 h1
