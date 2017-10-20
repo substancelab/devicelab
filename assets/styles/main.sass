@@ -6,6 +6,10 @@
 
 $link-color: #3498db
 
+@mixin wide-display
+  @media (min-width: 500px)
+    @content
+
 a
   &:link
     color: $link-color
@@ -19,7 +23,11 @@ article
   margin:
     left: auto
     right: auto
-  width: 66%
+  padding: 1rem
+
+  +wide-display
+    padding: 0
+    width: 66%
 
 body
   background: #f4f4f4
@@ -31,7 +39,7 @@ body
 
 header
   background: #f1c40f
-  font-size: 1.6em
+  font-size: 1em
   padding: 3rem
   text-align: center
 
@@ -40,6 +48,9 @@ header
 
   p
     margin-bottom: 0
+
+  +wide-display
+    font-size: 1.6em
 
 section
   border-bottom: 2px solid #dddded
@@ -63,6 +74,9 @@ h3
   line-height: 1.6
 
 // Table
+.table
+  max-width: 100%
+  overflow: auto
 table
   width: 100%
 
