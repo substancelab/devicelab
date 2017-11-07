@@ -99,9 +99,17 @@ iframe
   width: 100%
 
 .introduction
-  +wide-display
-    display: flex
-    justify-content: space-between
+  $_gutter: 2rem
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin:
+    left: -$_gutter
+    right: -$_gutter
 
-    div
-      max-width: 30%
+  div
+    flex: 1
+    min-width: 10rem
+    padding:
+      left: $_gutter
+      right: $_gutter
