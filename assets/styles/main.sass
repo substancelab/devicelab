@@ -20,13 +20,14 @@ a
     color: lighten($link-color, 25%)
 
 article
+  background: #ffffff
   margin:
     left: auto
     right: auto
-  padding: 1rem
+  padding: 2rem
 
   +wide-display
-    padding: 0
+    margin-top: -4rem
     width: 66%
 
 body
@@ -51,14 +52,19 @@ header
 
   +wide-display
     font-size: 1.6em
+    padding: 5rem
+    padding-bottom: 8rem
 
 section
-  border-bottom: 2px solid #dddded
+  border-bottom: 2px solid #f4f4f4
   padding:
     bottom: 4rem
   margin:
     bottom: 2rem
     top: 4rem
+
+  &:first-child
+    margin-top: 0
 
 // Headlines
 h1
